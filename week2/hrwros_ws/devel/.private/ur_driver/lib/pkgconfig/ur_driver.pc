@@ -1,0 +1,8 @@
+prefix=/home/marzan/hrwros_ws/devel/.private/ur_driver
+
+Name: ur_driver
+Description: Description of ur_driver
+Version: 1.2.7
+Cflags: -I/home/marzan/hrwros_ws/devel/.private/ur_driver/include
+Libs: -L${prefix}/lib 
+Requires: dynamic_reconfigure

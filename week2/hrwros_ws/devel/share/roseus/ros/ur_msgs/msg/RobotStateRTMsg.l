@@ -1,0 +1,1 @@
+/home/marzan/hrwros_ws/devel/.private/ur_msgs/share/roseus/ros/ur_msgs/msg/RobotStateRTMsg.l
