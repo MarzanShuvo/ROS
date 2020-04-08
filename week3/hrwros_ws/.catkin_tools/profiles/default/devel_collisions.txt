@@ -1,0 +1,1 @@
+/home/marzan/hrwros_ws/devel/./cmake.lock 770
