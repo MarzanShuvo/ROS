@@ -1,0 +1,1 @@
+/home/marzan/hrwros_ws/devel/.private/catkin_tools_prebuild/setup.sh

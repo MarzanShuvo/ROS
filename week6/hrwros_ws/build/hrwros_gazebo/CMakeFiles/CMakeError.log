@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/marzan/hrwros_ws/build/hrwros_gazebo/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e068e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e068e.dir/build.make CMakeFiles/cmTC_e068e.dir/build
+make[1]: Entering directory '/home/marzan/hrwros_ws/build/hrwros_gazebo/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e068e.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_e068e.dir/CheckSymbolExists.c.o   -c /home/marzan/hrwros_ws/build/hrwros_gazebo/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_e068e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e068e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e068e.dir/CheckSymbolExists.c.o  -o cmTC_e068e 
+CMakeFiles/cmTC_e068e.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e068e.dir/build.make:97: recipe for target 'cmTC_e068e' failed
+make[1]: *** [cmTC_e068e] Error 1
+make[1]: Leaving directory '/home/marzan/hrwros_ws/build/hrwros_gazebo/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e068e/fast' failed
+make: *** [cmTC_e068e/fast] Error 2
+
+File /home/marzan/hrwros_ws/build/hrwros_gazebo/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/marzan/hrwros_ws/build/hrwros_gazebo/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_350e2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_350e2.dir/build.make CMakeFiles/cmTC_350e2.dir/build
+make[1]: Entering directory '/home/marzan/hrwros_ws/build/hrwros_gazebo/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_350e2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_350e2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_350e2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_350e2.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_350e2.dir/CheckFunctionExists.c.o  -o cmTC_350e2 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_350e2.dir/build.make:97: recipe for target 'cmTC_350e2' failed
+make[1]: *** [cmTC_350e2] Error 1
+make[1]: Leaving directory '/home/marzan/hrwros_ws/build/hrwros_gazebo/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_350e2/fast' failed
+make: *** [cmTC_350e2/fast] Error 2
+
+

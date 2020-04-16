@@ -1,0 +1,8 @@
+prefix=/home/marzan/hrwros_ws/devel/.private/hrwros_factory_states
+
+Name: hrwros_factory_states
+Description: Description of hrwros_factory_states
+Version: 1.0.0
+Cflags: -I/home/marzan/hrwros_ws/src/hrwros_factory_states/src
+Libs: -L/home/marzan/hrwros_ws/devel/.private/hrwros_factory_states/lib -lhrwros_factory_states
+Requires: 
